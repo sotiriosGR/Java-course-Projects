@@ -1,0 +1,5 @@
+abstract class MyTester {    
+    public static void main(String[] args) 
+    {      Person p1 = new Person("Kings", "Paul", 22, true, 1200f);
+        MarriedPerson mp1 = new MarriedPerson("Tront", "Betty", 31,      980.5f, 3); 
+        System.out.print(p1.getFirstName()+" "+p1.getLastName()+" is "      +p1.getAge()+" years old, gets a "+p1.getSalary()      +" Euros salary and is");      if (p1.isMarried() == false)          System.out.print(" not");      System.out.println(" married.");      System.out.print(mp1.getFirstName()+" "+mp1.getLastName()      +" is " +mp1.getAge()+ " years old, gets a " + mp1.getSalary()      +" Euros salary and is" + " married with ");      if (mp1.getNoOfChildren() > 0)         System.out.print(mp1.getNoOfChildren());      else System.out.print("no");       System.out.println(" children.");  }  }
